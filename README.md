@@ -71,6 +71,6 @@ Please provide:
 3. If you complete the dashboard bonus task (Task 7), include your changes under `dashboard/` (the app should run with `npm install` and `npm run dev` from that folder)
 4. Comment on code or a brief report explaining your approach and findings
 5. Any assumptions you made during the analysis
-6. Send us the link to your repository to dev+interview@papcorns.com
+6. Send us the link to your repository to nur@papcorns.com
 
 Good luck!
