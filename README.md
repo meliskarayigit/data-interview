@@ -50,7 +50,7 @@ The dashboard bonus task is a small **Next.js** app under `dashboard/` . It inte
    - Add the chart in `dashboard/app/page.tsx` (look for `ADD THE CHART HERE`).
    - See `dashboard/README.md` for local setup and run instructions.
 
-8. Predict the potential Lifetime Value (pLTV) for user #1001 (Bruce Wayne)
+8. Predict the predicted Lifetime Value (pLTV) for user #1001 (Bruce Wayne)
    - Explain your methodology and assumptions
 
 ## Evaluation Criteria
