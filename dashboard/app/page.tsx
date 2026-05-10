@@ -48,6 +48,8 @@ export default function HomePage() {
                 />
               </div>
               <span className="bar-value">
+                  {/* Format number for UI display: limits decimal precision to 2 digits.
+      Returns a string (not a number), used only for presentation purposes */}
   ${row.avg_revenue_per_user.toFixed(2)}
 </span>
             </div>

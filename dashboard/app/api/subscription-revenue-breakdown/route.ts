@@ -15,7 +15,13 @@ export async function GET() {
   });
 
   try {
-    // Simple example SQL. Replace this with the query for the dashboard task.
+     // Goal:
+    // Calculate average revenue per paying user by country
+    // Logic:
+    // 1. Filter only subscription-related revenue events
+    //    (subscription_started, subscription_renewed)
+    // 2. Aggregate total revenue per country
+    // 3. Normalize by unique paying users (not transactions)sk.
     const rows = db
       .prepare(
         `
