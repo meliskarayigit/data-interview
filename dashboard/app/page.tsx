@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 
 type CountryRow = {
   country: string;
-  user_count: number;
+  avg_revenue_per_user: number;
 };
 
 export default function HomePage() {
@@ -17,9 +17,9 @@ export default function HomePage() {
   }, []);
 
   const maxValue = useMemo(
-    () => Math.max(...rows.map((row) => row.user_count), 1),
-    [rows],
-  );
+  () => Math.max(...rows.map((row) => row.avg_revenue_per_user), 1),
+  [rows],
+);
 
   return (
     <main>
@@ -30,7 +30,9 @@ export default function HomePage() {
       </p>
 
       <section className="chart-card">
-        <h2 className="chart-title">Users by country</h2>
+        <h2 className="chart-title">
+  Average Revenue per Paying User by Country
+</h2>
 
         {/* ADD THE CHART HERE */}
         <div className="simple-chart">
@@ -40,10 +42,14 @@ export default function HomePage() {
               <div className="bar-track">
                 <div
                   className="bar-fill"
-                  style={{ width: `${(row.user_count / maxValue) * 100}%` }}
+                  style={{
+  width: `${(row.avg_revenue_per_user / maxValue) * 100}%`,
+}}
                 />
               </div>
-              <span className="bar-value">{row.user_count}</span>
+              <span className="bar-value">
+  ${row.avg_revenue_per_user.toFixed(2)}
+</span>
             </div>
           ))}
         </div>
