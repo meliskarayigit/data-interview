@@ -1,0 +1,15 @@
+Analysis — Avg Revenue per Paying User by Country
+
+The chart shows average revenue per paying user by country using subscription events.
+
+US leads with $25.07, followed by NL with $22.38, while TR is lower at $13.31.
+
+Insight
+
+US and NL users generate higher value per user, likely due to better retention or higher plan adoption.
+TR users contribute less revenue per user, which may indicate lower pricing, shorter retention, or higher churn.
+
+Business Takeaway
+
+US/NL = high-value markets (focus on retention & upsell)
+TR = growth/price-sensitive market (optimize conversion & pricing)
